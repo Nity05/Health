@@ -30,18 +30,7 @@ export default function RootLayout({
           className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}
         >
           {/* Navbar */}
-          <header className="flex items-center justify-between p-4 border-b">
-            <h1 className="text-lg font-bold">v0 App</h1>
-            <div className="flex gap-2">
-              <SignedOut>
-                <SignInButton mode="modal" />
-                <SignUpButton mode="modal" />
-              </SignedOut>
-              <SignedIn>
-                <UserButton afterSignOutUrl="/" />
-              </SignedIn>
-            </div>
-          </header>
+          
 
           {/* Main content */}
           <main className="min-h-screen">{children}</main>

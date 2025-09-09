@@ -27,7 +27,7 @@ export default async function Page() {
       console.error('Error fetching user data:', error);
       return <div>Error loading your results: {error.message}</div>;
     }
-    console.log(userId)
+    console.log(data)
     // Pass the user's results to Dashboard
     return <Dashboard initialScanData={data || []} />;
     
